@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section class="todo">
+        <div class="todo__input">
+            <input class="todo__text" type="text">
+        </div>
+        <button class="todo__add button">добавить</button>
+        <select onchange='filterOption(this)' class="todo__options button">
+            <option value="all" class="all">all</option>
+            <option value="active" class="active">active</option>
+            <option value="completed" class="deleted">deleted</option>
+        </select>
+        <ul class="todo__items"></ul>
+    </section>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
